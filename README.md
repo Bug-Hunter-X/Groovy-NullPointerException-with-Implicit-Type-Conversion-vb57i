@@ -1,0 +1,3 @@
+# Groovy NullPointerException with Implicit Type Conversion
+
+This repository demonstrates a common issue in Groovy related to implicit type conversion and null handling.  The `myMethod` function intends to gracefully handle null inputs by returning null if either `a` or `b` is null. However, this approach can create unexpected behavior when the method is used in contexts that expect a specific type (e.g., int or String) and null is not automatically converted to 0 or an empty string as in some languages.
